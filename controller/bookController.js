@@ -225,9 +225,9 @@ exports.paymentController = async (req, res) => {
             //mode of payment
             mode: 'payment',
             // payment successful
-            success_url: `http://localhost:5173/payment-success`,
+            success_url: `https://bookstore-mern-front-end.vercel.app/payment-success`,
             // payment cancelled or failde
-            cancel_url: `http://localhost:5173/payment-error`,
+            cancel_url: `https://bookstore-mern-front-end.vercel.app/payment-error`,
         })
         console.log(session);
         // res.status(200).json({sessionId : session.id})
